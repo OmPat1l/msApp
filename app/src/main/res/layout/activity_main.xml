@@ -22,10 +22,10 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:backgroundTint="#FFFFFF"
-            android:fontFamily="monospace"
+            android:fontFamily="serif"
             android:text="@string/app_login"
             android:textAlignment="center"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/purple_700"
             android:textSize="34sp" />
 
         <LinearLayout
@@ -60,9 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150sp"
-                android:text="Button"
+                android:onClick="loginUser"
 
-                android:onClick="loginUser"/>
+                android:text="@string/login_main" />
         </LinearLayout>
 
     </LinearLayout>

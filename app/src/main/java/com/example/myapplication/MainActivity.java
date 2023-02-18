@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         TextView myTextView1 = findViewById(R.id.editTextNumberPassword);
         String myText1 = myTextView1.getText().toString();
         if(myText1.equals("123") && myText.equals("ompatil")){
-            Toast.makeText(this, "Button was pressed", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, secondPage.class);
+            startActivity(intent);
         }else{
             Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
 
@@ -34,4 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }
