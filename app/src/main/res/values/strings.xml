@@ -9,10 +9,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="login_main">Login</string>
+    <string name="event1">event1</string>
+    <string name="event2">event2</string>
+    <string name="event3">event3</string>
+    <string name="event4">event4</string>
+    <string name="getpass">Get Pass</string>
 
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_gallery">Get Passes</string>
+    <string name="menu_slideshow">Events</string>
 
 </resources>

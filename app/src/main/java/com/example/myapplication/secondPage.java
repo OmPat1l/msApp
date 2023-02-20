@@ -1,8 +1,13 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -16,6 +21,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.databinding.ActivitySecondPageBinding;
 
+//import org.chromium.net.CronetEngine;
+
 public class secondPage extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -23,6 +30,22 @@ public class secondPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Intent intent = getIntent();
+//        String myString = intent.getStringExtra("name");
+//        Log.d("MyActivity", "myString: " + myString);
+//
+//         myTextView = findViewById(R.id.text_home);
+//        myTextView.setText(myString);
+//        CronetEngine.Builder myBuilder = new CronetEngine.Builder(context);
+//        CronetEngine cronetEngine = myBuilder.build();
+
+
+
+
+
+
+
+
         super.onCreate(savedInstanceState);
 
         binding = ActivitySecondPageBinding.inflate(getLayoutInflater());
@@ -61,5 +84,11 @@ public class secondPage extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_second_page);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+    public void getpass(View view) {
+        EditText textField = findViewById(R.id.editTextTextPersonName2);
+        String text = textField.getText().toString();
+
+        Toast.makeText(this, "pass sent to $text", Toast.LENGTH_SHORT).show();
     }
 }
