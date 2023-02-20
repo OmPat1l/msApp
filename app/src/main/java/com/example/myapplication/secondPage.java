@@ -86,9 +86,9 @@ public class secondPage extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
     public void getpass(View view) {
-        EditText textField = findViewById(R.id.editTextTextPersonName2);
-        String text = textField.getText().toString();
+        Intent intent = new Intent(secondPage.this, MainActivityload.class);
+//        intent.putExtra("name",myText);
+        startActivity(intent);
 
-        Toast.makeText(this, "pass sent to $text", Toast.LENGTH_SHORT).show();
     }
 }
