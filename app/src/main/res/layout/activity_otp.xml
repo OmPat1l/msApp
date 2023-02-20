@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="410dp"
         android:layout_height="412dp"
-        android:background="@color/bg"
+        android:background="#FFFFFF"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,10 +20,10 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/bg"
-            android:backgroundTint="@color/bg"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
             android:fontFamily="serif"
-            android:text="@string/getpass"
+            android:text="@string/otp"
             android:textAlignment="center"
             android:textColor="@color/purple_700"
             android:textSize="34sp" />
@@ -35,44 +34,28 @@
             android:layout_marginLeft="12sp"
             android:layout_marginRight="12sp"
             android:layout_weight="2"
-            android:background="@color/bg"
+            android:background="#FFFFFF"
             android:clipToPadding="false"
             android:orientation="vertical"
             android:paddingTop="80sp">
-
-            <EditText
-                android:id="@+id/editTextTextPersonName2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="MIS"
-                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/editTextNumberPassword3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="user@coep.ac.in"
+                android:hint="xxx xxx"
                 android:inputType="numberPassword" />
 
             <Button
                 android:id="@+id/loginButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150sp"
-                android:onClick="getotp"
+                android:layout_marginLeft="125sp"
+                android:onClick="getpass"
 
-                android:text="@string/login_main" />
+                android:text="@string/otp" />
         </LinearLayout>
 
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="651dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
@@ -48,7 +48,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextNumberPassword2"
+                android:id="@+id/editTextNumberPassword3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -56,7 +56,7 @@
                 android:inputType="numberPassword" />
 
             <Button
-                android:id="@+id/loginButton2"
+                android:id="@+id/loginButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150sp"

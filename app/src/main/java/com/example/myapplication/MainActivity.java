@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void loginUser(View view) {
         TextView myTextView = findViewById(R.id.editTextTextPersonName2);
         String myText = myTextView.getText().toString();
-        TextView myTextView1 = findViewById(R.id.editTextNumberPassword2);
+        TextView myTextView1 = findViewById(R.id.editTextNumberPassword3);
         String myText1 = myTextView1.getText().toString();
         if(myText1.equals("123") && myText.equals("lorem")){
             Intent intent = new Intent(MainActivity.this, secondPage.class);

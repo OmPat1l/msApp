@@ -15,11 +15,21 @@
     <string name="event4">event4</string>
     <string name="getpass">Get Pass</string>
     <string name="passsent">Check your mail! </string>
+    <string name="otp">Verify OTP </string>
 
 
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Get Passes</string>
     <string name="menu_slideshow">Events</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>

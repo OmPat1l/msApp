@@ -85,10 +85,10 @@ public class secondPage extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-    public void getpass(View view) {
-        Intent intent = new Intent(secondPage.this, MainActivityload.class);
+    public void getotp(View view) {
+        Intent intent = new Intent(secondPage.this, otp.class);
 //        intent.putExtra("name",myText);
         startActivity(intent);
-
     }
+
 }
