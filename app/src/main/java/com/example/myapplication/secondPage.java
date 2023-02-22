@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.ui.home.HomeFragment;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -87,6 +88,12 @@ public class secondPage extends AppCompatActivity {
     }
     public void getotp(View view) {
         Intent intent = new Intent(secondPage.this, otp.class);
+//        intent.putExtra("name",myText);
+        startActivity(intent);
+    }
+    public void openEvent(View view) {
+        Intent intent = new Intent(secondPage.this, ScrollingActivity.class);
+
 //        intent.putExtra("name",myText);
         startActivity(intent);
     }
