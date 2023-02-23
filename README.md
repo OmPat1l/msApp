@@ -5,3 +5,4 @@ this would help me to implement the concepts of promises(asyn await) and help me
 
 The app conists of login page with user name lorem and password 123, home page has a event grid which on click directs to another page
 for more info, the get passes page will be integrated to my api, which would use a 3rd party api like Twilio to send mails and verify identify user
+(This app was later scrapped)
